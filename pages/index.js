@@ -23,7 +23,7 @@ export async function getServerSideProps(context) {
         title,
         tvSeriesInfo: { seasons }
     } = await axios(
-        `${process.env.IMDB_API_TITLE}{process.env.IMDB_API_KEY}/${process.env.IMDB_API_TITLE_ID}`
+        `${process.env.IMDB_API_TITLE}${process.env.IMDB_API_KEY}/${process.env.IMDB_API_TITLE_ID}`
     )
         .then((response) => (response.data.errorMessage ? titleMock : response.data))
         .catch(() => titleMock)
