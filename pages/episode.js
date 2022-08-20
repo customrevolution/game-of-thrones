@@ -9,9 +9,7 @@ const Episode = () => {
     return (
         <>
             <Head>
-                <title>
-                    {title} | Season #{season} Episode #{episode}
-                </title>
+                <title>{`${title} | Season #${season} Episode #${episode}`}</title>
             </Head>
             <EpisodePage
                 season={season}
