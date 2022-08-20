@@ -1,20 +1,26 @@
 {
-  "name": "game-of-thrones",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5"
-  }
+    "name": "game-of-thrones",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.12.4",
+        "axios": "^0.27.2",
+        "classnames": "^2.3.1",
+        "next": "12.2.5",
+        "prettier-eslint": "^15.0.1",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "sass": "^1.54.4",
+        "swiper": "^8.3.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.22.0",
+        "eslint-config-next": "12.2.5"
+    }
 }

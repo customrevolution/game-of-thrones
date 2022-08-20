@@ -1,3 +1,45 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": ["next/core-web-vitals", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+        "import/newline-after-import": ["error", { "count": 1 }],
+        "prettier/prettier": ["error"],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    "builtin",
+                    "external",
+                    "type",
+                    "internal",
+                    "parent",
+                    "sibling",
+                    "index",
+                    "object"
+                ],
+                "newlines-between": "never",
+                "pathGroups": [
+                    {
+                        "pattern": "@components/**",
+                        "group": "internal"
+                    },
+                    {
+                        "pattern": "@project/**",
+                        "group": "internal"
+                    },
+                    {
+                        "pattern": "@store/**",
+                        "group": "internal"
+                    },
+                    {
+                        "pattern": "**/*.module.scss",
+                        "group": "sibling",
+                        "after": "object"
+                    }
+                ]
+            }
+        ]
+    }
 }

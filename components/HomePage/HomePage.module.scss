@@ -1,0 +1,81 @@
+.homepage {
+    &__content {
+        position: relative;
+        z-index: 2;
+
+        h1 {
+            font-size: 35px;
+            letter-spacing: 2px;
+            opacity: 0.9;
+            margin-top: 10vh;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 0 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+            opacity: 0.85;
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 501px) and (max-width: 1024px) {
+            h1 {
+                font-size: 42px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            h1 {
+                font-size: 55px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__season-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            letter-spacing: 0.4px;
+            opacity: 0.85;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        button {
+            font-size: 12px;
+            color: white;
+            background: #202020;
+            text-transform: capitalize;
+            border-radius: 0;
+            padding: 12px 17px;
+        }
+
+        button:hover {
+            background: #9b0000dc;
+        }
+    }
+
+    &__season-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 24px;
+
+        &--active {
+            background: #da000090 !important;
+        }
+    }
+}
