@@ -18,7 +18,7 @@ export default function Home({ seasons, backgroundImage, title }) {
         </>
     )
 }
-export async function getServerSideProps(context) {
+export async function getServerSideProps() {
     const {
         title,
         tvSeriesInfo: { seasons }
